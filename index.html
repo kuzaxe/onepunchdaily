@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>One Punch Daily</title>
+<meta name="description" content="The hero routine, scaled to you. 100 push-ups, 100 sit-ups, 100 squats, a daily run — eased up from wherever you start today.">
+<link rel="icon" type="image/png" href="icon.png">
+<meta property="og:title" content="One Punch Daily">
+<meta property="og:description" content="The hero routine, scaled to you.">
+<meta property="og:image" content="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FAF7F2; --elev:#FFFFFF; --soft:#F1ECE2;
+    --line:#E6DFD0; --line2:#DCD3BF;
+    --ink:#161311; --ink2:#4B453E; --ink3:#847C70;
+    --hero:#E23D2C; --hero-deep:#B82A1B; --hero-soft:#FBE2DD;
+    --gold:#F2B500; --gold-soft:#FFEEB8;
+    --display:"Archivo",-apple-system,BlinkMacSystemFont,sans-serif;
+    --ui:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family:var(--ui); color:var(--ink); background:var(--bg);
+    margin:0; line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+    background-image:
+      radial-gradient(1100px 520px at 50% -260px, var(--hero-soft) 0%, rgba(251,226,221,0) 70%);
+  }
+  .wrap{max-width:680px; margin:0 auto; padding:0 22px}
+
+  /* Hero */
+  header{text-align:center; padding:76px 0 12px}
+  .icon{
+    width:104px; height:104px; border-radius:24px; display:block; margin:0 auto 26px;
+    box-shadow:0 14px 34px rgba(22,19,17,.22), 0 2px 0 rgba(255,255,255,.6) inset;
+    border:1px solid rgba(22,19,17,.08);
+  }
+  h1{
+    font-family:var(--display); font-weight:800; font-size:46px; letter-spacing:-.02em;
+    margin:0; line-height:1.02;
+  }
+  .lede{
+    font-size:19px; color:var(--ink2); margin:16px auto 0; max-width:430px;
+  }
+  .eyebrow{
+    font-size:11px; font-weight:600; letter-spacing:.09em; text-transform:uppercase;
+    color:var(--hero-deep); margin:0 0 18px;
+  }
+
+  /* Routine row */
+  .routine{
+    display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin:34px 0 8px;
+  }
+  .chip{
+    font-family:var(--display); font-weight:700; font-size:14px;
+    background:var(--elev); border:1px solid var(--line); border-radius:999px;
+    padding:9px 16px; color:var(--ink);
+    box-shadow:0 1px 0 rgba(22,19,17,.04);
+  }
+  .chip b{color:var(--hero); font-variant-numeric:tabular-nums}
+
+  /* Cards / links */
+  .links{display:grid; gap:14px; margin:48px 0}
+  a.card{
+    display:flex; align-items:center; gap:16px; text-decoration:none; color:inherit;
+    background:var(--elev); border:1px solid var(--line); border-radius:22px;
+    padding:20px 22px; transition:transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+    box-shadow:0 1px 2px rgba(22,19,17,.04);
+  }
+  a.card:hover{transform:translateY(-2px); box-shadow:0 12px 26px rgba(22,19,17,.10); border-color:var(--line2)}
+  .card .glyph{
+    flex:0 0 46px; height:46px; border-radius:14px; display:grid; place-items:center;
+    font-size:22px; background:var(--hero-soft);
+  }
+  .card .glyph.gold{background:var(--gold-soft)}
+  .card h3{font-family:var(--display); font-weight:700; font-size:18px; margin:0 0 2px}
+  .card p{margin:0; color:var(--ink3); font-size:14.5px}
+  .card .arrow{margin-left:auto; color:var(--ink4,#B5AC9C); font-size:20px}
+
+  /* Footer */
+  footer{
+    text-align:center; color:var(--ink3); font-size:13px;
+    border-top:1px solid var(--line); padding:30px 0 60px; margin-top:18px;
+  }
+  footer a{color:var(--hero); text-decoration:none}
+  footer a:hover{text-decoration:underline}
+
+  @media (max-width:520px){
+    header{padding:56px 0 8px}
+    h1{font-size:38px}
+    .lede{font-size:17px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <img class="icon" src="icon.png" alt="One Punch Daily app icon">
+    <p class="eyebrow">iOS · Free</p>
+    <h1>One Punch Daily</h1>
+    <p class="lede">The hero routine, scaled to you — eased up from wherever you start today.</p>
+
+    <div class="routine">
+      <span class="chip"><b>100</b> push-ups</span>
+      <span class="chip"><b>100</b> sit-ups</span>
+      <span class="chip"><b>100</b> squats</span>
+      <span class="chip"><b>10&nbsp;km</b> run</span>
+    </div>
+  </header>
+
+  <nav class="links">
+    <a class="card" href="support.html">
+      <span class="glyph">💬</span>
+      <span>
+        <h3>Support &amp; FAQ</h3>
+        <p>Setup help, the widget, reminders, and common questions.</p>
+      </span>
+      <span class="arrow">→</span>
+    </a>
+    <a class="card" href="privacy.html">
+      <span class="glyph gold">🔒</span>
+      <span>
+        <h3>Privacy Policy</h3>
+        <p>No accounts, no tracking — everything stays on your device.</p>
+      </span>
+      <span class="arrow">→</span>
+    </a>
+  </nav>
+
+  <footer>
+    Built by Raj Pandya · <a href="mailto:raj.pandya@outlook.com">raj.pandya@outlook.com</a>
+  </footer>
+
+</div>
+</body>
+</html>
